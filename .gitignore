@@ -1,4 +1,4 @@
-doc/.~*
+.~*
+*.o
 packages/
-src/*.o
 src/powwer-terry

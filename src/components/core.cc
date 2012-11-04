@@ -27,7 +27,7 @@ Core::~Core() {
 void Core::load() {
 	if ( current_step == INTRO ) {
 		Trace(Log.DEBUG, "Loading Introduction");
-		if ( ! Image.LoadFromFile("./res/intr.jpg") ) {
+		if ( ! Image.LoadFromFile("./res/intro.jpg") ) {
 			Trace(Log.WARNING, "Cannot load from file ./res/intro.jpg");
 		}
 		App.Create(sf::VideoMode(IMG_INTRO_W, IMG_INTRO_H, IMG_INTRO_D), GAME_TITLE, IMG_INTRO_S);
