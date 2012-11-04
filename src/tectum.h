@@ -11,11 +11,22 @@
 
 #ifndef TECTUM_H_
 #define TECTUM_H_
- 
-#define TECTUM_VERSION "0.0.1"
 
 #include <cstdlib>
 #include <cstdio>
 #include "./components/core.h"
+ 
+
+namespace tectum {
+
+#define TECTUM_VERSION "0.0.1"
+
+class Tectum {
+	public:
+		Tectum();
+		~Tectum();	
+};
+
+}
 
 #endif  // TECTUM_H_

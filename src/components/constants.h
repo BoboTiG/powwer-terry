@@ -14,17 +14,19 @@
 
 
 // Functions
-#define Trace(a,b) Log.write(__FILE__, __LINE__, a, b);
+#define Trace(a,b) log_.write(__FILE__, __LINE__, a, b);
 
 
 // Variables
 #define GAME_TITLE "Powwer Terry"
-#define MIN_LOG_LEVEL NONE  // Minimum log level
+#if ( ! defined(MIN_LOG_LEVEL) )
+	#define MIN_LOG_LEVEL NONE  // Minimum log level
+#endif
  
-#define IMG_INTRO_W 600
-#define IMG_INTRO_H 200
-#define IMG_INTRO_D 16
-#define IMG_INTRO_S sf::Style::None
+#define INTRO_IMG_W 600
+#define INTRO_IMG_H 200
+#define INTRO_IMG_D 16
+#define INTRO_IMG_S sf::Style::None
 
 
 #endif  // COMPONENTS_CONSTANTS_H_

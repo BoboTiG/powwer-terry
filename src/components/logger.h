@@ -14,8 +14,11 @@
 
 #include <cstdio>
 #include <map>
+#include <string>
 #include "./constants.h"
 
+
+namespace tectum {
 
 class Logger {
 public:
@@ -45,7 +48,13 @@ public:
 	void write(const char*, const unsigned int, const Levels, const char*);
 
 private:
-	std::map<unsigned int, const char*>level_name;
+	/*!
+	 * \var level_name
+	 * \brief Map with correspondinf Level number => Level name.
+	 */
+	std::map<unsigned int, const char*>level_name_;
 };
+
+}
 
 #endif  // COMPONENTS_LOGGER_H_

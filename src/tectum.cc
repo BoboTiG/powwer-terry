@@ -11,8 +11,11 @@
 
 #include "./tectum.h"
 
-int main(int argc, char *argv[]) {
-	Core game;
+
+namespace tectum {
+
+Tectum::Tectum() {
+	tectum::Core game;
 	unsigned int step;
 	
 	for ( step = game.INTRO; step <= game.MENU; ++step ) {
@@ -21,5 +24,13 @@ int main(int argc, char *argv[]) {
 		game.update();
 		game.render();
 	}
+}
+
+Tectum::~Tectum() {}
+
+}
+
+int main(int argc, char *argv[]) {
+	tectum::Tectum game;
 	return EXIT_SUCCESS;
 }

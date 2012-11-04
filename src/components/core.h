@@ -13,10 +13,13 @@
 #define COMPONENTS_CORE_H_
 
 #include <cstdio>
+#include <csignal>
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include "./logger.h"
 
+
+namespace tectum {
 
 class Core {
 public:
@@ -30,12 +33,6 @@ public:
 		SCENE = 0x03
 	} Steps;
 	
-	/*!
-	 * \var current_step
-	 * \brief Current running step.
-	 */
-	unsigned int current_step;
-	
 	Core();
 	~Core();
 	
@@ -46,54 +43,68 @@ public:
 	void load();
 	
 	/*!
-	 * \brief parametre 2
+	 * \brief Process update for a given step.
 	 * @return void
 	 */
 	void update();
 	
 	/*!
-	 * \brief parametre 2
+	 * \brief Process render for a given step.
 	 * @return void
 	 */
 	void render();
 	
 	/*!
-	 * \brief parametre 1
-	 * @param parametre 2
+	 * \brief Set current step.
+	 * @param Step number
 	 * @return void
 	 */
-	void setStep(unsigned int);
+	void setStep(const unsigned int);
 	
 	/*!
-	 * \brief parametre 2
-	 * @return ce qui est retourné
+	 * \brief Get current step.
+	 * @return Step number
 	 */
 	unsigned int getStep();
+	
+	/*!
+	 * \var current_step_
+	 * \brief Current step.
+	 */
+	unsigned int current_step_;
 
 private:
 	/*!
-	 * \var Log
+	 * \var step_name_
+	 * \brief Map with correspondinf Step number => Step name.
+	 */
+	std::map<unsigned int, std::string>step_name_;
+	
+	/*!
+	 * \var log_
 	 * \brief Logger object to manage log files.
 	 */
-	Logger Log;
+	tectum::Logger log_;
 	
 	/*!
-	 * \var App
+	 * \var app_
 	 * \brief The window to render.
 	 */
-	sf::RenderWindow App;
+	sf::RenderWindow app_;
 	
 	/*!
-	 * \var Image
+	 * \var image_
 	 * \brief The file to load as sprite.
 	 */
-	sf::Image Image;
+	sf::Image image_;
 	
 	/*!
-	 * \var Sprite
+	 * \var sprite_
 	 * \brief Table of CRC-32's of all single-byte values.
 	 */
-	sf::Sprite Sprite;
+	sf::Sprite sprite_;
 };
+
+}
 
 #endif  // COMPONENTS_CORE_H_

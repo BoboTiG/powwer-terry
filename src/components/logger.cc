@@ -11,11 +11,14 @@
 
 #include "./logger.h"
 
+
+namespace tectum {
+
 Logger::Logger() {
-	level_name[DEBUG]   = "DEBUG";
-	level_name[NOTICE]  = "NOTICE";
-	level_name[WARNING] = "WARNING";
-	level_name[ERROR]   = "ERROR";
+	level_name_[DEBUG]   = "DEBUG";
+	level_name_[NOTICE]  = "NOTICE";
+	level_name_[WARNING] = "WARNING";
+	level_name_[ERROR]   = "ERROR";
 }
 
 Logger::~Logger() {}
@@ -25,6 +28,8 @@ void Logger::write(
 	const Levels level, const char* str
 ) {
 	if ( level > MIN_LOG_LEVEL ) {
-		printf("[%s:%d] %s %s\n", file, line, level_name[level], str);
+		printf("[%s:%d] %s %s\n", file, line, level_name_[level], str);
 	}
+}
+
 }

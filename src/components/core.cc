@@ -11,56 +11,62 @@
 
 #include "./core.h"
 
+
+namespace tectum {
+
 Core::Core():
-	current_step(current_step)
+	current_step_(current_step_)
 {
-	Trace(Log.NOTICE, "Starting the game.");
+	Trace(log_.NOTICE, "Starting the game.");
+	step_name_[INTRO] = "the introduction";
+	step_name_[MENU]  = "the menu";
+	step_name_[SCENE] = "a scene";
 }
 
 Core::~Core() {
-	Trace(Log.NOTICE, "Closing game.");
-	if ( App.IsOpened() ) {
-		App.Close();
+	Trace(log_.NOTICE, "Closing the game.");
+	if ( app_.IsOpened() ) {
+		app_.Close();
 	}
 }
 
 void Core::load() {
-	if ( current_step == INTRO ) {
-		Trace(Log.DEBUG, "Loading Introduction");
-		if ( ! Image.LoadFromFile("./res/intro.jpg") ) {
-			Trace(Log.WARNING, "Cannot load from file ./res/intro.jpg");
+	Trace(log_.DEBUG, std::string("Loading " + step_name_[current_step_]).c_str());
+	if ( current_step_ == INTRO ) {
+		if ( ! image_.LoadFromFile("./res/intro.jpg") ) {
+			Trace(log_.WARNING, "Cannot load from file ./res/intro.jpg");
+			return;
 		}
-		App.Create(sf::VideoMode(IMG_INTRO_W, IMG_INTRO_H, IMG_INTRO_D), GAME_TITLE, IMG_INTRO_S);
+		app_.Create(sf::VideoMode(INTRO_IMG_W, INTRO_IMG_H, INTRO_IMG_D), GAME_TITLE, INTRO_IMG_S);
 	}
-	App.SetFramerateLimit(60);
-	App.SetPosition(
-		(sf::VideoMode::GetDesktopMode().Width / 2.f - App.GetWidth() / 2.f),
-		(sf::VideoMode::GetDesktopMode().Height / 2.f - App.GetHeight() / 2.f)
+	app_.SetFramerateLimit(60);
+	app_.SetPosition(
+		(sf::VideoMode::GetDesktopMode().Width / 2.f - app_.GetWidth() / 2.f),
+		(sf::VideoMode::GetDesktopMode().Height / 2.f - app_.GetHeight() / 2.f)
 	);
-	Sprite.SetImage(Image);
+	sprite_.SetImage(image_);
 }
 
 void Core::update() {
-	if ( current_step == INTRO ) {
-		Trace(Log.DEBUG, "Updating Introduction");
-	}
+	Trace(log_.DEBUG, std::string("Updating " + step_name_[current_step_]).c_str());
 }
 
 void Core::render() {
-	if ( current_step == INTRO ) {
-		Trace(Log.DEBUG, "Rendering Introduction");
-	}
-	while ( App.IsOpened() ) {
-		App.Clear();
-		App.Draw(Sprite);
-		App.Display();
+	Trace(log_.DEBUG, std::string("Rendering " + step_name_[current_step_]).c_str());
+	while ( app_.IsOpened() ) {
+		app_.Clear();
+		app_.Draw(sprite_);
+		app_.Display();
 	}
 }
 
-void Core::setStep(unsigned int step) {
-	current_step = step;
+void Core::setStep(const unsigned int step) {
+	current_step_ = step;
+	Trace(log_.NOTICE, std::string("Let's go with " + step_name_[current_step_]).c_str());
 }
 
 unsigned int Core::getStep() {
-	return current_step;
+	return current_step_;
+}
+
 }
