@@ -9,13 +9,13 @@
  */
 
 
-#ifndef SRC_TECTUM_H_
-#define SRC_TECTUM_H_
+#ifndef TECTUM_H_
+#define TECTUM_H_
  
 #define TECTUM_VERSION "0.0.1"
 
 #include <cstdlib>
 #include <cstdio>
-#include "./core/core.h"
+#include "./components/core.h"
 
-#endif  // SRC_TECTUM_H_
+#endif  // TECTUM_H_

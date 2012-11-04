@@ -1,27 +1,23 @@
 
 CXX     = g++
 #CFLAGS  = -march=native -O3 -s
-CFLAGS  = -g -O0 -std=c++0x
+CFLAGS  = -g -O0
 #CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -Weffc++ -Wpadded -fexceptions
 LDLIBS  =  -lsfml-graphics -lsfml-window
-OBJ     = core.o
+OBJ     = logger.o core.o
 NAME    = powwer-terry
 
-all: title clean $(NAME)
+all: clean $(NAME)
 
 clean:
 	@echo " . Cleaning ... "
 	rm -f *.o $(NAME)
 
-title:
-	@echo " ~ Powwer Terry!"
-
 $(NAME): $(OBJ)
 	$(CXX) $(CFLAGS) $(LDLIBS) $^ tectum.cc -o $@
 
 $(OBJ):
-	@echo " + Building $* module ..."
-	$(CXX) $(CFLAGS) -c $*/$*.cc
+	$(CXX) $(CFLAGS) -c components/$*.cc
 
 check:
 	valgrind --leak-check=full --show-reachable=yes ./$(NAME)

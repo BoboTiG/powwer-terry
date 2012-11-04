@@ -3,73 +3,67 @@
  * \file core.h
  * \brief Tectum engine - core headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.09.15
+ * \date 2012.11.04
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
 
 
-#ifndef SRC_CORE_CORE_H_
-#define SRC_CORE_CORE_H_
-
-#define IMG_INTRO_W 600
-#define IMG_INTRO_H 200
-#define IMG_INTRO_D 16
-#define IMG_INTRO_T "Powwer Terry! Intro" 
-#define IMG_INTRO_S sf::Style::None
+#ifndef COMPONENTS_CORE_H_
+#define COMPONENTS_CORE_H_
 
 #include <cstdio>
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
+#include "./logger.h"
 
 
 class Core {
 public:
 	/*!
-	 * \var pcrc_32_tab
-	 * \brief Table of CRC-32's of all single-byte values.
+	 * \var Steps
+	 * \brief Possible steps. The Core needs to know which step to run.
 	 */
 	typedef enum {
 		INTRO = 0x01,
 		MENU  = 0x02,
 		SCENE = 0x03
 	} Steps;
+	
 	/*!
-	 * \var pcrc_32_tab
-	 * \brief Table of CRC-32's of all single-byte values.
+	 * \var current_step
+	 * \brief Current running step.
 	 */
 	unsigned int current_step;
-	/*!
-	 * \brief parametre 2
-	 * @return ce qui est retourné
-	 */
+	
 	Core();
-	/*!
-	 * \brief parametre 2
-	 * @return ce qui est retourné
-	 */
 	~Core();
+	
 	/*!
-	 * \brief parametre 2
-	 * @return ce qui est retourné
+	 * \brief Load specific actions for a given step.
+	 * @return void
 	 */
 	void load();
+	
 	/*!
 	 * \brief parametre 2
-	 * @return ce qui est retourné
+	 * @return void
 	 */
 	void update();
+	
 	/*!
 	 * \brief parametre 2
-	 * @return ce qui est retourné
+	 * @return void
 	 */
 	void render();
+	
 	/*!
 	 * \brief parametre 1
 	 * @param parametre 2
-	 * @return ce qui est retourné
+	 * @return void
 	 */
 	void setStep(unsigned int);
+	
 	/*!
 	 * \brief parametre 2
 	 * @return ce qui est retourné
@@ -78,20 +72,28 @@ public:
 
 private:
 	/*!
-	 * \var pcrc_32_tab
-	 * \brief Table of CRC-32's of all single-byte values.
+	 * \var Log
+	 * \brief Logger object to manage log files.
+	 */
+	Logger Log;
+	
+	/*!
+	 * \var App
+	 * \brief The window to render.
 	 */
 	sf::RenderWindow App;
+	
 	/*!
-	 * \var pcrc_32_tab
-	 * \brief Table of CRC-32's of all single-byte values.
+	 * \var Image
+	 * \brief The file to load as sprite.
 	 */
 	sf::Image Image;
+	
 	/*!
-	 * \var pcrc_32_tab
+	 * \var Sprite
 	 * \brief Table of CRC-32's of all single-byte values.
 	 */
 	sf::Sprite Sprite;
 };
 
-#endif  // SRC_CORE_CORE_H_
+#endif  // COMPONENTS_CORE_H_
