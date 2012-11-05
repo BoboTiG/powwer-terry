@@ -11,12 +11,10 @@
 
 #ifndef TECTUM_H_
 #define TECTUM_H_
-
-#include <cstdlib>
-#include <cstdio>
-#include "./components/core.h"
  
 #define TECTUM_VERSION "0.0.1"
+
+#include "./components/core.h"
 
 
 namespace tectum {

@@ -2,8 +2,7 @@
 CXX     = g++
 #CFLAGS  = -march=native -O3 -s
 CFLAGS  = -g -O0
-#CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Wpadded -Weffc++
-CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Weffc++
+CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Weffc++ -Wpadded
 LDLIBS  = -lsfml-graphics -lsfml-window
 LIB     = ConvertUTF.o
 OBJ     = config.o logger.o core.o

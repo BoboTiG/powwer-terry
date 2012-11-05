@@ -18,9 +18,9 @@
 namespace tectum {
 
 Config::Config():
-	log_(log_),
-	config_(&config_),
-	current_section_(current_section_)
+	log_(),
+	config_(),
+	current_section_()
 {
 	config_.SetUnicode(true);
 	config_.SetMultiKey(false);

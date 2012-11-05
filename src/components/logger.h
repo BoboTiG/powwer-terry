@@ -14,7 +14,6 @@
 
 #include <cstdio>
 #include <map>
-#include <string>
 #include "./constants.h"
 
 
@@ -45,7 +44,7 @@ public:
 	 * @param The level of information
 	 * @return void
 	 */
-	void write(const char *, const unsigned int &, const Levels &, const char *);
+	void write(const char *, const unsigned int &, const char *, const Levels &);
 	void debug(const char *, const unsigned int &, const char *);
 	void notice(const char *, const unsigned int &, const char *);
 	void warn(const char *, const unsigned int &, const char *);

@@ -26,24 +26,24 @@ Logger::Logger():
 Logger::~Logger() {}
 
 void Logger::debug(const char *file, const unsigned int &line, const char *str) {
-	this->write(file, line, DEBUG, str);
+	this->write(file, line, str, DEBUG);
 }
 
 void Logger::notice(const char *file, const unsigned int &line, const char *str) {
-	this->write(file, line, NOTICE, str);
+	this->write(file, line, str, NOTICE);
 }
 
 void Logger::warn(const char *file, const unsigned int &line, const char *str) {
 	
-	this->write(file, line, WARNING, str);
+	this->write(file, line, str, WARNING);
 }
 void Logger::error(const char *file, const unsigned int &line, const char *str) {
-	this->write(file, line, ERROR, str);
+	this->write(file, line, str, ERROR);
 }
 
 void Logger::write(
 	const char *file, const unsigned int &line,
-	const Levels &level, const char *str
+	const char *str, const Levels &level
 ) {
 	if ( level > MIN_LOG_LEVEL ) {
 		printf("[%s:%d] %s %s\n", file, line, level_name_[level], str);

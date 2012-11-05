@@ -15,7 +15,7 @@
 namespace tectum {
 
 Core::Core():
-	current_step_(current_step_)/*,
+	current_step_(),
 	pad__(0),
 	log_(),
 	config_(),
@@ -23,7 +23,7 @@ Core::Core():
 	image_(),
 	sprite_(),
 	step_name_(),
-	game_name_(game_name_)*/
+	game_name_()
 {
 	NOTICE("Starting the game \\o/");
 	step_name_[INTRO] = "the introduction";

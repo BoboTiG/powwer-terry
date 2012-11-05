@@ -13,10 +13,8 @@
 #define COMPONENTS_CORE_H_
 
 #include <cstdio>
-#include <csignal>
+#include <string>
 #include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include "./logger.h"
 #include "./config.h"
 
 
