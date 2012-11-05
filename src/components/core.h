@@ -56,6 +56,13 @@ public:
 	void render();
 	
 	/*!
+	 * \brief Set the game's name.
+	 * @param Name of the game
+	 * @return void
+	 */
+	void setGame(const char *name);
+	
+	/*!
 	 * \brief Set current step.
 	 * @param Step number
 	 * @return void
@@ -75,11 +82,13 @@ public:
 	unsigned int current_step_;
 
 private:
+	int pad__;
+	 
 	/*!
 	 * \var log_
 	 * \brief Logger object to manage log files.
 	 */
-	tectum::Logger log_;
+	 tectum::Logger log_;
 	
 	/*!
 	 * \var config_
@@ -110,6 +119,12 @@ private:
 	 * \brief Map with correspondinf Step number => Step name.
 	 */
 	std::map<unsigned int, std::string>step_name_;
+	
+	/*!
+	 * \var game_name_
+	 * \brief The name of the game.
+	 */
+	std::string game_name_;
 	
 };
 

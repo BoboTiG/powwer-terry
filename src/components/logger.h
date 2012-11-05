@@ -45,7 +45,11 @@ public:
 	 * @param The level of information
 	 * @return void
 	 */
-	void write(const char*, const unsigned int, const Levels, const char*);
+	void write(const char *, const unsigned int &, const Levels &, const char *);
+	void debug(const char *, const unsigned int &, const char *);
+	void notice(const char *, const unsigned int &, const char *);
+	void warn(const char *, const unsigned int &, const char *);
+	void error(const char *, const unsigned int &, const char *);
 	
 	/*!
 	 * \var str_

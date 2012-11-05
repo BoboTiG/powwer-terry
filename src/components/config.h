@@ -95,10 +95,10 @@ private:
 	tectum::Logger log_;
 	
 	/*!
-	 * \var ini_
+	 * \var config_
 	 * \brief INI file handler to manage configurations.
 	 */
-	CSimpleIniCaseA ini_;
+	CSimpleIniCaseA config_;
 	
 	/*!
 	 * \var current_section_

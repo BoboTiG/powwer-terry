@@ -197,6 +197,11 @@
 #if defined(_MSC_VER) && (_MSC_VER >= 1020)
 # pragma once
 #endif
+    
+#ifdef __GNUC__
+// Avoid tons of warnings with root code
+# pragma GCC system_header
+#endif
 
 // Disable these warnings in MSVC:
 //  4127 "conditional expression is constant" as the conversion classes trigger

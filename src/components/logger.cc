@@ -14,7 +14,9 @@
 
 namespace tectum {
 
-Logger::Logger() {
+Logger::Logger():
+	level_name_()
+{
 	level_name_[DEBUG]   = "DEBUG";
 	level_name_[NOTICE]  = "NOTICE";
 	level_name_[WARNING] = "WARNING";
@@ -23,9 +25,25 @@ Logger::Logger() {
 
 Logger::~Logger() {}
 
+void Logger::debug(const char *file, const unsigned int &line, const char *str) {
+	this->write(file, line, DEBUG, str);
+}
+
+void Logger::notice(const char *file, const unsigned int &line, const char *str) {
+	this->write(file, line, NOTICE, str);
+}
+
+void Logger::warn(const char *file, const unsigned int &line, const char *str) {
+	
+	this->write(file, line, WARNING, str);
+}
+void Logger::error(const char *file, const unsigned int &line, const char *str) {
+	this->write(file, line, ERROR, str);
+}
+
 void Logger::write(
-	const char* file, const unsigned int line,
-	const Levels level, const char* str
+	const char *file, const unsigned int &line,
+	const Levels &level, const char *str
 ) {
 	if ( level > MIN_LOG_LEVEL ) {
 		printf("[%s:%d] %s %s\n", file, line, level_name_[level], str);

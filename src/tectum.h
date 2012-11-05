@@ -3,7 +3,7 @@
  * \file tectum.h
  * \brief Tectum engine - headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.04
+ * \date 2012.11.05
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
@@ -16,14 +16,14 @@
 #include <cstdio>
 #include "./components/core.h"
  
+#define TECTUM_VERSION "0.0.1"
+
 
 namespace tectum {
 
-#define TECTUM_VERSION "0.0.1"
-
 class Tectum {
 	public:
-		Tectum();
+		Tectum(const char *);
 		~Tectum();	
 };
 

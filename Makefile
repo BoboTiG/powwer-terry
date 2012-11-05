@@ -2,8 +2,9 @@
 CXX     = g++
 #CFLAGS  = -march=native -O3 -s
 CFLAGS  = -g -O0
-#CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -Weffc++ -Wpadded -fexceptions
-LDLIBS  =  -lsfml-graphics -lsfml-window
+#CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Wpadded -Weffc++
+CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Weffc++
+LDLIBS  = -lsfml-graphics -lsfml-window
 LIB     = ConvertUTF.o
 OBJ     = config.o logger.o core.o
 NAME    = powwer-terry

@@ -15,9 +15,17 @@
 namespace tectum {
 
 Core::Core():
-	current_step_(current_step_)
+	current_step_(current_step_)/*,
+	pad__(0),
+	log_(),
+	config_(),
+	app_(),
+	image_(),
+	sprite_(),
+	step_name_(),
+	game_name_(game_name_)*/
 {
-	Trace(log_.NOTICE, "Starting the game \\o/");
+	NOTICE("Starting the game \\o/");
 	step_name_[INTRO] = "the introduction";
 	step_name_[MENU]  = "the menu";
 	step_name_[SCENE] = "a scene";
@@ -25,14 +33,14 @@ Core::Core():
 }
 
 Core::~Core() {
-	Trace(log_.NOTICE, "Closing the game /o\\  Tcho !");
+	NOTICE("Closing the game /o\\  Tcho !");
 	if ( app_.IsOpened() ) {
 		app_.Close();
 	}
 }
 
 void Core::load() {
-	Trace(log_.DEBUG, std::string("Loading " + step_name_[current_step_]).c_str());
+	DEBUG(std::string("Loading " + step_name_[current_step_]).c_str());
 	if ( current_step_ == INTRO ) {
 		if ( ! config_.load("./config/game.ini") ) {
 			return;
@@ -41,19 +49,19 @@ void Core::load() {
 			return;
 		}
 		if ( ! config_.getValue("show", true) ) {
-			Trace(log_.NOTICE, "Player do not want to display the intro ... :(");
+			NOTICE("Player do not want to display the intro ... :(");
 			return;
 		}
 		if ( ! image_.LoadFromFile("./res/intro.jpg") ) {
-			Trace(log_.WARNING, "Cannot load from file ./res/intro.jpg");
+			WARN("Cannot load from file ./res/intro.jpg");
 			return;
 		}
 		app_.Create(
 			sf::VideoMode(
 				config_.getValue("width", 600),
 				config_.getValue("height", 200),
-				INTRO_IMG_D),
-			GAME_TITLE, INTRO_IMG_S
+				16),
+			game_name_, sf::Style::None
 		);
 	}
 	app_.SetFramerateLimit(60);
@@ -65,11 +73,11 @@ void Core::load() {
 }
 
 void Core::update() {
-	Trace(log_.DEBUG, std::string("Updating " + step_name_[current_step_]).c_str());
+	DEBUG(std::string("Updating " + step_name_[current_step_]).c_str());
 }
 
 void Core::render() {
-	Trace(log_.DEBUG, std::string("Rendering " + step_name_[current_step_]).c_str());
+	DEBUG(std::string("Rendering " + step_name_[current_step_]).c_str());
 	if ( current_step_ == INTRO ) {
 		while ( app_.IsOpened() ) {
 			sf::Event event;
@@ -85,9 +93,14 @@ void Core::render() {
 	}
 }
 
+void Core::setGame(const char *name) {
+	game_name_ = name;
+	NOTICE(std::string("This game is \"" + game_name_ + "\"  YEAH great name!").c_str());
+}
+
 void Core::setStep(const unsigned int step) {
 	current_step_ = step;
-	Trace(log_.NOTICE, std::string("Let's go with " + step_name_[current_step_]).c_str());
+	NOTICE(std::string("Let's go with " + step_name_[current_step_]).c_str());
 }
 
 unsigned int Core::getStep() {
