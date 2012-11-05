@@ -17,6 +17,7 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include "./logger.h"
+#include "./config.h"
 
 
 namespace tectum {
@@ -75,16 +76,16 @@ public:
 
 private:
 	/*!
-	 * \var step_name_
-	 * \brief Map with correspondinf Step number => Step name.
-	 */
-	std::map<unsigned int, std::string>step_name_;
-	
-	/*!
 	 * \var log_
 	 * \brief Logger object to manage log files.
 	 */
 	tectum::Logger log_;
+	
+	/*!
+	 * \var config_
+	 * \brief Configuration handler.
+	 */
+	tectum::Config config_;
 	
 	/*!
 	 * \var app_
@@ -103,6 +104,13 @@ private:
 	 * \brief Table of CRC-32's of all single-byte values.
 	 */
 	sf::Sprite sprite_;
+	
+	/*!
+	 * \var step_name_
+	 * \brief Map with correspondinf Step number => Step name.
+	 */
+	std::map<unsigned int, std::string>step_name_;
+	
 };
 
 }

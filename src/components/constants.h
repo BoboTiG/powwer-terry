@@ -23,8 +23,8 @@
 	#define MIN_LOG_LEVEL NONE  // Minimum log level
 #endif
  
-#define INTRO_IMG_W 600
-#define INTRO_IMG_H 200
+//#define INTRO_IMG_W 600
+//#define INTRO_IMG_H 200
 #define INTRO_IMG_D 16
 #define INTRO_IMG_S sf::Style::None
 

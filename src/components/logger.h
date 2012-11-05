@@ -3,7 +3,7 @@
  * \file logger.h
  * \brief Tectum engine - logger headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.04
+ * \date 2012.11.05
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
@@ -46,6 +46,12 @@ public:
 	 * @return void
 	 */
 	void write(const char*, const unsigned int, const Levels, const char*);
+	
+	/*!
+	 * \var str_
+	 * \brief Where you can store a sentence to send to write().
+	 */
+	char str_[4096];
 
 private:
 	/*!

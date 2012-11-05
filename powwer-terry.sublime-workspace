@@ -1,0 +1,667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"_",
+				"_print"
+			],
+			[
+				"is_",
+				"is_object"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"ini_",
+				"ini_get"
+			],
+			[
+				"m",
+				"margin-right"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"f",
+				"format"
+			],
+			[
+				"dim",
+				"dim_y"
+			],
+			[
+				"im",
+				"ImageMagick"
+			],
+			[
+				"pixel",
+				"pixels_jpeg"
+			],
+			[
+				"r",
+				"row_pointer"
+			],
+			[
+				"utf8_",
+				"utf8_encode"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			],
+			[
+				"is",
+				"is_int"
+			],
+			[
+				"h",
+				"htaccess"
+			],
+			[
+				"isdi",
+				"is_dir"
+			],
+			[
+				"co",
+				"contenus"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"rkk_",
+				"rkk_hash"
+			],
+			[
+				"ar",
+				"argv"
+			],
+			[
+				"arg",
+				"argc"
+			],
+			[
+				"file",
+				"filei"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"re",
+				"read"
+			],
+			[
+				"rou",
+				"roundkey"
+			],
+			[
+				"use",
+				"useshell"
+			],
+			[
+				"PR",
+				"PROGRAMVERSION"
+			],
+			[
+				"Image",
+				"ImageGrab"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"n",
+				"n_ver"
+			],
+			[
+				"ccr",
+				"ccryptlib"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"u",
+				"unistd"
+			],
+			[
+				"Z",
+				"Z_OK"
+			],
+			[
+				"enc",
+				"encryption_header"
+			],
+			[
+				"chosen",
+				"chosen_one"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"my",
+				"mybufstream"
+			],
+			[
+				"ini",
+				"ini_set"
+			],
+			[
+				"slee",
+				"sleeping_time"
+			],
+			[
+				"start",
+				"start_time"
+			],
+			[
+				"star",
+				"start_byte"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/mnt/stock/projets/powwer-terry/src/tectum.h",
+		"/mnt/stock/projets/powwer-terry/src/tectum.cc",
+		"/mnt/stock/projets/powwer-terry/src/components/logger.h",
+		"/mnt/stock/projets/powwer-terry/src/components/logger.cc",
+		"/mnt/stock/projets/powwer-terry/src/components/core.h",
+		"/mnt/stock/projets/powwer-terry/src/components/constants.h",
+		"/mnt/stock/projets/powwer-terry/src/components/core.cc",
+		"/mnt/stock/projets/powwer-terry/Makefile",
+		"/mnt/stock/projets/powwer-terry/.gitignore",
+		"/mnt/stock/projets/powwer-terry/README.md",
+		"/mnt/stock/projets/powwer-terry/src/Makefile",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/main.cc",
+		"/mnt/master/projets/codez/Logiciel/log.h",
+		"/mnt/stock/projets/powwer-terry/src/logger.cc",
+		"/mnt/stock/projets/powwer-terry/src/logger.h",
+		"/mnt/master/projets/codez/Logiciel/log.cpp",
+		"/mnt/stock/projets/powwer-terry/src/core/core.h",
+		"/mnt/stock/projets/powwer-terry/src/core/core.cc",
+		"/mnt/master/projets/codez/Logiciel/constant.h",
+		"/mnt/stock/projets/powwer-terry/doc/Fonts/liens",
+		"/mnt/stock/projets/powwer-terry/doc/Fonts/gnutypewriter/GNUTypewriter.sfd",
+		"/home/tiger-222/press-start-2p/LICENSE.txt",
+		"/home/tiger-222/press-start-2p/FONTLOG.txt",
+		"/mnt/stock/projets/powwer-terry/doc/graphe.class.violet",
+		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/Jeu.h",
+		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/Jeu.cpp",
+		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/main.cpp",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/main.cpp",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ClassePrincipale.cpp",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ClassePrincipale.h",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/Jeu.cpp",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/Jeu.h",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ncursJeu.h",
+		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ncursJeu.cpp",
+		"/opt/subliminal/README.rst",
+		"/mnt/master/www/bobotig/contenu/contrib/scripts/bonjour.sh",
+		"/mnt/stock/programmation/fourre-tout/shell/bonjour",
+		"/mnt/stock/projets/cracker-ng/archive/34/modules/zip/crc32.hpp",
+		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Monstres.txt",
+		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Zone.txt",
+		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Objets.txt",
+		"/home/tiger-222/Correspondance.txt",
+		"/mnt/stock/projets/powwer-terry/src/core/_Makefile",
+		"/mnt/stock/projets/powwer-terry/src/core/Makefile",
+		"/mnt/stock/projets/powwer-terry/src/Makefile.win",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/Makefile",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/Makefile",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/cpt/Makefile",
+		"/mnt/stock/projets/powwer-terry/CHANGELOG",
+		"/mnt/stock/projets/powwer-terry/REQUIREMENTS",
+		"/mnt/stock/projets/powwer-terry/CREDITS",
+		"/mnt/stock/projets/powwer-terry/INSTALL",
+		"/mnt/stock/projets/powwer-terry/VERSION",
+		"/mnt/stock/projets/pombo/pombo.conf",
+		"/home/tiger-222/IPy-0.75/COPYING",
+		"/home/tiger-222/IPy-0.75/setup.py",
+		"/mnt/stock/projets/pombo/pombo.py",
+		"/mnt/stock/projets/pombo/REQUIREMENTS",
+		"/mnt/master/www/bobotig/pages/_variables.php",
+		"/mnt/master/www/bobotig/contenu/documents/guide-pombo/index.php",
+		"/home/tiger-222/widgetMenu.js",
+		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/include/class_ttf.h",
+		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/include/Player.h",
+		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/src/Player.cpp",
+		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/src/class_ttf.cpp",
+		"/mnt/stock/projets/powwer-terry/.git/config",
+		"/home/tiger-222/GE++/GEV3_Brainiac/src/main.cpp",
+		"/home/tiger-222/GE++/GEV3_Brainiac/src/IGameEngine.cpp",
+		"/home/tiger-222/GE++/GEV3_Brainiac/src/GameEngine_SDL.cpp",
+		"/home/tiger-222/GE++/GEV2_UFO/Makefile",
+		"/home/tiger-222/GE++/GEV1_Slideshow/Makefile",
+		"/home/tiger-222/GE++/AUTHOR.txt",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/engine.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/engine.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/power-terry.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/power-terry.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/Makefile",
+		"/home/tiger-222/GE++/GEV1_Slideshow/stdout.txt",
+		"/home/tiger-222/GE++/GEV1_Slideshow/version.txt",
+		"/mnt/stock/projets/polycode/BUILD.txt",
+		"/mnt/stock/projets/polycode/CMakeLists.txt",
+		"/mnt/stock/projets/polycode/Dependencies/CMakeLists.txt",
+		"/mnt/stock/projets/vlen/.gitignore",
+		"/mnt/stock/projets/docolav/.gitignore",
+		"/mnt/stock/projets/pombo/pombo-git/.gitignore",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/event.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/event.h",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/shared/stats.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/core.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/core.h",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/shared/stats.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/moteur/core.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/power-terry.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/power-terry.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Audio.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Drawable.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Core.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Constants.h",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Audio.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/audio.cc",
+		"/mnt/stock/projets/power-terry_1st-offensive/src/File.class",
+		"/home/tiger-222/solarus-0.9.2/readme.txt",
+		"/home/tiger-222/solarus-0.9.2/install.txt",
+		"/home/tiger-222/solarus-0.9.2/CMakeLists.txt",
+		"/home/tiger-222/solarus-0.9.2/src/Configuration.cpp",
+		"/home/tiger-222/solarus-0.9.2/src/Treasure.cpp",
+		"/home/tiger-222/solarus-0.9.2/src/Timer.cpp",
+		"/home/tiger-222/solarus-0.9.2/ChangeLog",
+		"/home/tiger-222/solarus-0.9.2/license.txt",
+		"/home/tiger-222/GameEditor/bin/update.sh",
+		"/mnt/stock/projets/pombo/pombo-git/pombo.py",
+		"/mnt/stock/projets/pombo/pombo-git/pombo.conf",
+		"/mnt/stock/projets/pombo/pombo-git/VERSION",
+		"/mnt/stock/projets/pombo/pombo-git/REQUIREMENTS",
+		"/mnt/master/www/bobotig/voleur/pombo.php",
+		"/mnt/master/www/rugby/chansons/generer_index.php",
+		"/mnt/master/www/deleted.files",
+		"/mnt/stock/apps/Windows/Gros poissons/Statistica 8.0.725.0 (EN)/Instructions.txt",
+		"/mnt/master/www/maj-btg",
+		"/mnt/master/www/bobotig/robots.txt",
+		"/mnt/master/www/rugby/boutique/_variables.php",
+		"/mnt/master/www/rugby/boutique/bdc.php",
+		"/home/tiger-222/tests/test.php",
+		"/home/tiger-222/tests/t",
+		"/home/tiger-222/test.php",
+		"/mnt/stock/projets/matriux/Sources-diverses/Forum/MODs/delete-tmp_T2/deleteTmp.php",
+		"/mnt/stock/projets/vncpwdump/vncpwdump.c",
+		"/mnt/stock/projets/vncpwdump/COPYING"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"stepint",
+			"_image",
+			"_sprite",
+			"current_step",
+			"_app",
+			"_log",
+			"_step_name",
+			"level_name",
+			"_Trace",
+			"step_name",
+			"sprite.",
+			"image.",
+			"app.",
+			"_log.",
+			"Trace(",
+			"log.",
+			"Sprite.",
+			"Image.",
+			"App.",
+			"Log.",
+			"this->",
+			"-lsfml-window",
+			" margin-right: 20px;",
+			"Valeurs possible pour",
+			"%tmp%",
+			"$positionnement",
+			"$couleur",
+			"$image",
+			"$img",
+			"$tmp",
+			"$ext",
+			"$dossier",
+			"$image",
+			"Ã©",
+			"^#",
+			"width",
+			"dimx",
+			"infos_image.",
+			"infos_image->",
+			"arg1",
+			"EXIT_SUCCESS",
+			"EXIT_FAILURE",
+			"cimg_use_jpeg",
+			"Ã‰",
+			"é",
+			"Ã©",
+			"/mnt/master",
+			"style=\"color:red;\"",
+			"acronym",
+			"style=\"text-align:center;\"",
+			" style=\"width:400px; height:100px;\"",
+			"style=\"text-align:center;\"",
+			"style=\"color:red;\"",
+			"acronym",
+			"style=\"color:pink;\"",
+			"style=\"color:magenta;\"",
+			"style=\"color:#6363ff;\"",
+			"style=\"color:orange;\"",
+			"style=\"color:yellow\"",
+			"oran",
+			"table",
+			"inline",
+			".html\\*",
+			".html*",
+			"(.*) ",
+			"#435A5F\n435A5f",
+			"href=\"//",
+			"&ccedil;",
+			"&rsquo;",
+			"&icirc;",
+			"&ocirc;",
+			"&agrave;",
+			"&Eacute;",
+			"@btg",
+			"/etc/init.d/",
+			"&egrave;",
+			"&ecirc;",
+			"&eacute;",
+			"https:",
+			"http:",
+			"<span>$image</span>",
+			"win_install",
+			"http:",
+			"https:",
+			" :.</h2>",
+			"<h2>.: ",
+			" :.</h2>",
+			".: ",
+			" :.</h2>",
+			"<h2>.: ",
+			" :.</h2>",
+			"<h2>.: ",
+			" :.</h2>",
+			"<h2>.: ",
+			" :.</h2>",
+			"<h2>.: ",
+			"*/>'",
+			"'toutes/'.",
+			"ajout",
+			"http:",
+			"						'<",
+			"http:",
+			"https:",
+			" :",
+			"//$",
+			"contenu/",
+			"http:",
+			"note",
+			"RedList » Films » ",
+			"</sup>",
+			"<sup>",
+			".syntaxhighlighter .command_help",
+			"toolb",
+			"this->",
+			"charget_",
+			"password",
+			"src",
+			">.\n",
+			"int",
+			">\n",
+			"(char*)",
+			", \\n",
+			"runprocess",
+			"save",
+			"ImageGrab",
+			"TMPDIR",
+			"http://",
+			"FNAME"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"image_",
+			"sprite_",
+			"current_step_",
+			"app_",
+			"log_",
+			"step_name_",
+			"level_name_",
+			"Trace",
+			"_step_name",
+			"_sprite.",
+			"_image.",
+			"_app.",
+			"log.",
+			"_Trace(",
+			"_log.",
+			"sprite.",
+			"image.",
+			"app.",
+			"log.",
+			"",
+			"Valeurs possibles pour",
+			"%tempo%",
+			"%positionnement%",
+			"%couleur%",
+			"%image%",
+			"%img%",
+			"%tmp%",
+			"%ext%",
+			"%dossier%",
+			"%image%",
+			"é",
+			"rem",
+			"",
+			"argv[1]",
+			"0",
+			"1",
+			"&Eacute;",
+			"&eacute;",
+			"/var",
+			"class=\"attention\"",
+			"abbr",
+			"class=\"centre\"",
+			"",
+			"class=\"centre\"",
+			"class=\"attention\"",
+			"abbr",
+			"class=\"fichier_perdu\"",
+			"class=\"site\"",
+			"class=\"option\"",
+			"class=\"fichier\"",
+			".html",
+			"",
+			"href=\"http://",
+			"ç",
+			"'",
+			"î",
+			"ô",
+			"à",
+			"É",
+			"@serveur",
+			"service ",
+			"è",
+			"ê",
+			"é",
+			"",
+			"$image",
+			"",
+			"</h2>",
+			"<h2>",
+			"</h2>",
+			"",
+			"</h2>",
+			"<h2>",
+			"</h2>",
+			"<h2>",
+			"</h2>",
+			"<h2>",
+			"</h2>",
+			"<h2>",
+			"",
+			":",
+			"",
+			")",
+			" (",
+			"",
+			"charset_",
+			"pwd",
+			"reinterpret_cast<char*>(",
+			",\\n",
+			"TMP",
+			"",
+			"fname",
+			"FNAME",
+			"",
+			"cd->file",
+			"&cd->",
+			"",
+			"strong_encryption",
+			"&this->cd.",
+			"&this->cd->",
+			"this->filei.",
+			",",
+			"local_lfh"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 136.0,
+	"status_bar_visible": true
+}

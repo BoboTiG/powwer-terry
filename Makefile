@@ -4,7 +4,8 @@ CXX     = g++
 CFLAGS  = -g -O0
 #CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -Weffc++ -Wpadded -fexceptions
 LDLIBS  =  -lsfml-graphics -lsfml-window
-OBJ     = logger.o core.o
+LIB     = ConvertUTF.o
+OBJ     = config.o logger.o core.o
 NAME    = powwer-terry
 
 all: clean $(NAME)
@@ -13,8 +14,11 @@ clean:
 	@echo " . Cleaning ... "
 	rm -f *.o $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(LIB) $(OBJ)
 	$(CXX) $(CFLAGS) $(LDLIBS) $^ src/tectum.cc -o $@
+
+$(LIB):
+	$(CXX) $(CFLAGS) -c src/lib/$*.c
 
 $(OBJ):
 	$(CXX) $(CFLAGS) -c src/components/$*.cc
