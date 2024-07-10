@@ -3,33 +3,34 @@
  * \file core.cc
  * \brief Tectum engine - core.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.05
+ * \date 2012.11.05 - Initial release
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
 
 
-#include "./core.h"
+#include <Tectum/components/core.h>
 
 
 namespace tectum {
 
-Core::Core():
-	current_step_(),
-	pad__(0),
+Core::Core(const char *name):
+	current_step_(current_step_),
 	log_(),
 	config_(),
 	app_(),
 	image_(),
 	sprite_(),
 	step_name_(),
-	game_name_()
+	game_name_(name),
+	screen_width_(sf::VideoMode::GetDesktopMode().Width),
+	screen_height_(sf::VideoMode::GetDesktopMode().Height)
 {
 	NOTICE("Starting the game \\o/");
+	NOTICE(std::string("This game is \"" + game_name_ + "\"  YEAH great name!").c_str());
 	step_name_[INTRO] = "the introduction";
 	step_name_[MENU]  = "the menu";
 	step_name_[SCENE] = "a scene";
-	config_.setLogger(log_);
 }
 
 Core::~Core() {
@@ -42,18 +43,14 @@ Core::~Core() {
 void Core::load() {
 	DEBUG(std::string("Loading " + step_name_[current_step_]).c_str());
 	if ( current_step_ == INTRO ) {
-		if ( ! config_.load("./config/game.ini") ) {
-			return;
-		}
-		if ( ! config_.setSection("introduction") ) {
-			return;
-		}
+		if ( ! config_.load("./config/game.ini") )  return;
+		if ( ! config_.setSection("introduction") ) return;
 		if ( ! config_.getValue("show", true) ) {
 			NOTICE("Player do not want to display the intro ... :(");
 			return;
 		}
-		if ( ! image_.LoadFromFile("./res/intro.jpg") ) {
-			WARN("Cannot load from file ./res/intro.jpg");
+		if ( ! image_.LoadFromFile(INTRO_IMG) ) {
+			WARN("Cannot load from file!");
 			return;
 		}
 		app_.Create(
@@ -63,11 +60,13 @@ void Core::load() {
 				16),
 			game_name_, sf::Style::None
 		);
+	} else {
+		if ( ! config_.setSection("general") ) return;
+		app_.SetFramerateLimit(60);
 	}
-	app_.SetFramerateLimit(60);
 	app_.SetPosition(
-		(sf::VideoMode::GetDesktopMode().Width / 2.f - app_.GetWidth() / 2.f),
-		(sf::VideoMode::GetDesktopMode().Height / 2.f - app_.GetHeight() / 2.f)
+		(screen_width_ / 2.f - app_.GetWidth() / 2.f),
+		(screen_height_ / 2.f - app_.GetHeight() / 2.f)
 	);
 	sprite_.SetImage(image_);
 }
@@ -93,9 +92,20 @@ void Core::render() {
 	}
 }
 
-void Core::setGame(const char *name) {
-	game_name_ = name;
-	NOTICE(std::string("This game is \"" + game_name_ + "\"  YEAH great name!").c_str());
+void Core::run() {
+	unsigned int step;
+
+	for ( step = INTRO; step <= MENU; ++step ) {
+		setStep(step);
+		load();
+		update();
+		render();
+	}
+}
+
+void setLogger(const tectum::Logger &logger) {
+	log_ = logger;
+	config_.setLogger(log_);
 }
 
 void Core::setStep(const unsigned int step) {

@@ -3,18 +3,23 @@
  * \file logger.h
  * \brief Tectum engine - logger headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.05
+ * \date 2012.11.05 - Initial release
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
 
 
-#ifndef COMPONENTS_LOGGER_H_
-#define COMPONENTS_LOGGER_H_
+#ifndef TECTUM_COMPONENTS_LOGGER_H_
+#define TECTUM_COMPONENTS_LOGGER_H_
+
+#define DEBUG(str)  log_.debug(__FILE__, __LINE__, str);
+#define NOTICE(str) log_.notice(__FILE__, __LINE__, str);
+#define WARN(str)   log_.warn(__FILE__, __LINE__, str);
+#define ERROR(str)  log_.error(__FILE__, __LINE__, str);
 
 #include <cstdio>
 #include <map>
-#include "./constants.h"
+#include <Tectum/constants.h>
 
 
 namespace tectum {
@@ -44,11 +49,11 @@ public:
 	 * @param The level of information
 	 * @return void
 	 */
-	void write(const char *, const unsigned int &, const char *, const Levels &);
-	void debug(const char *, const unsigned int &, const char *);
+	void write (const char *, const unsigned int &, const char *, const Levels &);
+	void debug (const char *, const unsigned int &, const char *);
 	void notice(const char *, const unsigned int &, const char *);
-	void warn(const char *, const unsigned int &, const char *);
-	void error(const char *, const unsigned int &, const char *);
+	void warn  (const char *, const unsigned int &, const char *);
+	void error (const char *, const unsigned int &, const char *);
 	
 	/*!
 	 * \var str_
@@ -66,4 +71,4 @@ private:
 
 }
 
-#endif  // COMPONENTS_LOGGER_H_
+#endif  // TECTUM_COMPONENTS_LOGGER_H_

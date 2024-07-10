@@ -3,19 +3,19 @@
  * \file core.h
  * \brief Tectum engine - core headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.04
+ * \date 2012.11.05 - Initial release
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  */
 
 
-#ifndef COMPONENTS_CORE_H_
-#define COMPONENTS_CORE_H_
+#ifndef TECTUM_COMPONENTS_CORE_H_
+#define TECTUM_COMPONENTS_CORE_H_
 
 #include <cstdio>
 #include <string>
 #include <SFML/Graphics.hpp>
-#include "./config.h"
+#include <Tectum/components/config.h>
 
 
 namespace tectum {
@@ -32,7 +32,7 @@ public:
 		SCENE = 0x03
 	} Steps;
 	
-	Core();
+	Core(const char *);
 	~Core();
 	
 	/*!
@@ -54,11 +54,11 @@ public:
 	void render();
 	
 	/*!
-	 * \brief Set the game's name.
-	 * @param Name of the game
+	 * \brief Set logger to use.
+	 * @param Logger
 	 * @return void
 	 */
-	void setGame(const char *name);
+	void setLogger(const tectum::Logger &);
 	
 	/*!
 	 * \brief Set current step.
@@ -74,19 +74,29 @@ public:
 	unsigned int getStep();
 	
 	/*!
+	 * \brief Run the game
+	 * @return void
+	 */
+	void run();
+	
+	/*!
 	 * \var current_step_
 	 * \brief Current step.
 	 */
-	unsigned int current_step_;
+	size_t current_step_;
 
 private:
-	int pad__;
+	/*!
+	 * \var pad__
+	 * \brief Padding.
+	 */
+	//int pad__;
 	 
 	/*!
 	 * \var log_
 	 * \brief Logger object to manage log files.
 	 */
-	 tectum::Logger log_;
+	tectum::Logger &log_;
 	
 	/*!
 	 * \var config_
@@ -124,8 +134,9 @@ private:
 	 */
 	std::string game_name_;
 	
+	unsigned int screen_width_, screen_height_;
 };
 
 }
 
-#endif  // COMPONENTS_CORE_H_
+#endif  // TECTUM_COMPONENTS_CORE_H_

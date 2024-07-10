@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"c",
+				"current_section_"
+			],
+			[
+				"game",
+				"game_name_"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
 				"_",
 				"_print"
 			],
@@ -86,10 +98,6 @@
 			[
 				"arg",
 				"argc"
-			],
-			[
-				"file",
-				"filei"
 			],
 			[
 				"in",
@@ -179,6 +187,94 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/Tectum/README.md",
+			"settings":
+			{
+				"buffer_size": 393,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Makefile",
+			"settings":
+			{
+				"buffer_size": 871,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/powwer-terry.cc",
+			"settings":
+			{
+				"buffer_size": 463,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/components/core.h",
+			"settings":
+			{
+				"buffer_size": 2213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/mnt/master/projets/gatorque/fix-qualifiers.patch",
+			"settings":
+			{
+				"buffer_size": 3601,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Tectum/components/core.cc",
+			"settings":
+			{
+				"buffer_size": 2624,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/constants.h",
+			"settings":
+			{
+				"buffer_size": 590,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/components/logger.h",
+			"settings":
+			{
+				"buffer_size": 1615,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/components/config.h",
+			"settings":
+			{
+				"buffer_size": 2311,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/components/config.cc",
+			"settings":
+			{
+				"buffer_size": 2943,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Tectum/components/logger.cc",
+			"settings":
+			{
+				"buffer_size": 1269,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -204,134 +300,134 @@
 	},
 	"file_history":
 	[
-		"/mnt/stock/projets/powwer-terry/src/tectum.h",
-		"/mnt/stock/projets/powwer-terry/src/tectum.cc",
-		"/mnt/stock/projets/powwer-terry/src/components/logger.h",
-		"/mnt/stock/projets/powwer-terry/src/components/logger.cc",
-		"/mnt/stock/projets/powwer-terry/src/components/core.h",
-		"/mnt/stock/projets/powwer-terry/src/components/constants.h",
-		"/mnt/stock/projets/powwer-terry/src/components/core.cc",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/components/config.h",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/tectum.h",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/constants.h",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/tectum.cc",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/classes/Prototype.cpp",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/Entity_types.cpp",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/components/constants.h",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/components/core.h",
+		"/mnt/stock/projets/powwer-terry/src/Tectum/components/logger.h",
+		"/mnt/stock/projets/powwer-terry/src/powwer-terry.h",
+		"/mnt/master/projets/gatorque/cmake/Config.cmake",
+		"/mnt/master/projets/gatorque/include/GQE/Entity/interfaces/ISystem.hpp",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/interfaces/ISystem.cpp",
+		"/mnt/master/projets/gatorque/include/GQE/Entity/interfaces/IEntity.hpp",
+		"/mnt/master/projets/gatorque/examples/tictactoe/src/GameState.cpp",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/interfaces/IEntity.cpp",
+		"/home/tiger-222/mpn_demo3/all/demo2.5_dh.map",
+		"/mnt/master/projets/gatorque/readme.txt",
+		"/mnt/master/projets/gatorque/fix-qualifiers.patch",
+		"/mnt/master/projets/gatorque/fix-warnings.patch",
+		"/mnt/master/projets/gatorque/include/GQE/Entity/systems/AnimationSystem.hpp",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/systems/AnimationSystem.cpp",
+		"/mnt/master/projets/gatorque/include/GQE/Core/interfaces/IApp.hpp",
+		"/mnt/master/projets/gatorque/src/GQE/Core/interfaces/IApp.cpp",
+		"/mnt/master/projets/gatorque/src/GQE/Entity/systems/ActionSystem.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Entity/interfaces/ISystem.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Entity/systems/ActionSystem.cpp",
+		"/mnt/master/projets/gqe/include/GQE/Core/interfaces/IApp.hpp",
+		"/mnt/master/projets/gqe/cmake/Config.cmake",
+		"/mnt/master/projets/gqe/src/GQE/Core/interfaces/IApp.cpp",
+		"/mnt/master/projets/gqe/readme.txt",
+		"/mnt/master/projets/gqe/include/GQE/Core/interfaces/TAssetHandler.hpp",
 		"/mnt/stock/projets/powwer-terry/Makefile",
+		"/mnt/stock/projets/docolav/.git/config",
+		"/mnt/stock/projets/gatorque/README.md",
+		"/mnt/stock/projets/gatorque/.git/config",
+		"/mnt/stock/projets/docolav/.gitignore",
+		"/mnt/stock/projets/gatorque/license.txt",
+		"/mnt/master/projets/gqe/src/GQE/Core/interfaces/ILogger.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/loggers/FileLogger.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/loggers/StringLogger.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/states/SplashState.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/ConfigHandler.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/FontHandler.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/ImageHandler.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/MusicHandler.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/SoundHandler.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/MusicAsset.cpp",
+		"/mnt/master/projets/gqe/src/GQE/Core/assets/ConfigAsset.cpp",
+		"/mnt/master/projets/gqe/gqe-config.cmake.in",
+		"/mnt/master/projets/gqe/CMakeLists.txt",
+		"/mnt/master/projets/gqe/src/GQE/Entity/Entity_types.cpp",
+		"/mnt/master/projets/gqe/include/GQE/Entity.hpp",
+		"/mnt/master/projets/gqe/gqe-configversion.cmake.in",
+		"/home/tiger-222/GQE-v0_22_4/readme.txt",
+		"/home/tiger-222/GQE-v0_22_4/cmake/Config.cmake",
+		"/home/tiger-222/GQE-v0_22_4/CMakeLists.txt",
+		"/mnt/master/projets/gqe/cmake/Macros.cmake",
+		"/home/tiger-222/GQE-v0_22_4/build/examples/spacedots/Makefile",
+		"/home/tiger-222/GQE-v0_22_4/build/examples/spacedots/output.txt",
+		"/mnt/stock/projets/powwer-terry/src/components/core.h",
+		"/mnt/stock/projets/powwer-terry/src/components/core.cc",
+		"/mnt/stock/projets/powwer-terry/config/game.ini",
+		"/home/tiger-222/GQE-v0_22_4/examples/spacedots/src/GameState.cpp",
+		"/home/tiger-222/GQE-v0_22_4/src/GQE/Core/interfaces/IApp.cpp",
+		"/home/tiger-222/GQE-v0_22_4/include/GQE/Core/interfaces/IApp.hpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/spacedots/src/main.cpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/spacedots/src/SpaceDotsApp.hpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/spacedots/src/GameState.hpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/spacedots/src/SpaceDotsApp.cpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/src/main.cpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/src/GameState.cpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/src/GameState.hpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/src/TicTacToeApp.cpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/src/TicTacToeApp.hpp",
+		"/home/tiger-222/GQE-v0_22_4/examples/tictactoe/resources/settings.cfg",
+		"/mnt/stock/projets/powwer-terry/src/components/config.cc",
+		"/mnt/stock/projets/powwer-terry/src/components/logger.cc",
+		"/mnt/stock/projets/powwer-terry/src/components/config.h",
+		"/home/tiger-222/GQE-v0_22_4/include/GQE/Entity/systems/ActionSystem.hpp",
+		"/mnt/stock/projets/powwer-terry/src/tectum.cc",
+		"/mnt/stock/projets/powwer-terry/src/tectum.h",
+		"/mnt/stock/projets/powwer-terry/src/components/logger.h",
+		"/mnt/stock/projets/powwer-terry/src/components/constants.h",
+		"/home/tiger-222/GQE-v0_22_4/include/GQE/Core.hpp",
+		"/home/tiger-222/GQE-v0_22_4/include/GQE/Config.hpp",
+		"/home/tiger-222/GQE-v0_22_4/include/GQE/Entity.hpp",
+		"/home/tiger-222/GQE-v0_22_4/src/GQE/Core/Core_types.cpp",
+		"/home/tiger-222/GQE-v0_22_4/src/GQE/Core/assets/ConfigAsset.cpp",
+		"/home/tiger-222/GQE-v0_22_4/src/GQE/Core/assets/SoundHandler.cpp",
+		"/home/tiger-222/GQE-v0_22_4/changes.txt",
+		"/mnt/stock/projets/powwer-terry/src/lib/ConvertUTF.h",
+		"/mnt/stock/projets/powwer-terry/src/lib/SimpleIni.h",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/main.cc",
+		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/main.h",
+		"/mnt/stock/projets/docolav/src/docolav.cc",
 		"/mnt/stock/projets/powwer-terry/.gitignore",
+		"/mnt/stock/projets/powwer-terry/src/lib/ConvertUTF.c",
+		"/home/tiger-222/minIni_12a/NOTICE",
+		"/home/tiger-222/minIni_12a/minIni.h",
+		"/home/tiger-222/minIni_12a/test2.cc",
+		"/home/tiger-222/minIni_12a/minIni.c",
+		"/home/tiger-222/minIni_12a/minGlue.h",
+		"/home/tiger-222/minIni_12a/minGlue-stdio.h",
+		"/home/tiger-222/minIni_12a/test.ini",
+		"/home/tiger-222/minIni_12a/test.c",
+		"/home/tiger-222/minIni_12a/wxMinIni.h",
+		"/home/tiger-222/minIni_12a/minGlue-ccs.h",
+		"/home/tiger-222/inih_r26/ini.h",
+		"/home/tiger-222/libini-1.1.10/TODO",
+		"/home/tiger-222/inih_r26/ini.c",
+		"/home/tiger-222/inih_r26/README.txt",
+		"/home/tiger-222/inih_r26/cpp/INIReaderTest.cpp",
+		"/home/tiger-222/inih_r26/cpp/INIReader.h",
+		"/home/tiger-222/inih_r26/LICENSE.txt",
+		"/mnt/stock/projets/powwer-terry/powwer-terry.sublime-workspace",
+		"/mnt/stock/projets/powwer-terry/src/lib/test1.cpp",
+		"/mnt/stock/projets/powwer-terry/src/lib/Makefile",
+		"/mnt/stock/projets/powwer-terry/src/lib/INIReader.h",
+		"/mnt/stock/projets/powwer-terry/src/lib/INIReader.cpp",
+		"/mnt/stock/projets/powwer-terry/src/lib/ini.h",
+		"/mnt/stock/projets/powwer-terry/src/lib/ini.c",
 		"/mnt/stock/projets/powwer-terry/README.md",
 		"/mnt/stock/projets/powwer-terry/src/Makefile",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/main.cc",
 		"/mnt/master/projets/codez/Logiciel/log.h",
 		"/mnt/stock/projets/powwer-terry/src/logger.cc",
 		"/mnt/stock/projets/powwer-terry/src/logger.h",
-		"/mnt/master/projets/codez/Logiciel/log.cpp",
-		"/mnt/stock/projets/powwer-terry/src/core/core.h",
-		"/mnt/stock/projets/powwer-terry/src/core/core.cc",
-		"/mnt/master/projets/codez/Logiciel/constant.h",
-		"/mnt/stock/projets/powwer-terry/doc/Fonts/liens",
-		"/mnt/stock/projets/powwer-terry/doc/Fonts/gnutypewriter/GNUTypewriter.sfd",
-		"/home/tiger-222/press-start-2p/LICENSE.txt",
-		"/home/tiger-222/press-start-2p/FONTLOG.txt",
-		"/mnt/stock/projets/powwer-terry/doc/graphe.class.violet",
-		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/Jeu.h",
-		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/Jeu.cpp",
-		"/home/tiger-222/devilsai-0.2.svn64/src/Jeu/main.cpp",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/main.cpp",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ClassePrincipale.cpp",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ClassePrincipale.h",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/Jeu.cpp",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/Jeu.h",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ncursJeu.h",
-		"/home/tiger-222/les 2 versions a compiler sous linux/Zelda sans changement de zone (fonctionne)/Jeu/ncursJeu.cpp",
-		"/opt/subliminal/README.rst",
-		"/mnt/master/www/bobotig/contenu/contrib/scripts/bonjour.sh",
-		"/mnt/stock/programmation/fourre-tout/shell/bonjour",
-		"/mnt/stock/projets/cracker-ng/archive/34/modules/zip/crc32.hpp",
-		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Monstres.txt",
-		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Zone.txt",
-		"/home/tiger-222/Release avec Cgt zone/Cartes/Zone0/Objets.txt",
-		"/home/tiger-222/Correspondance.txt",
-		"/mnt/stock/projets/powwer-terry/src/core/_Makefile",
-		"/mnt/stock/projets/powwer-terry/src/core/Makefile",
-		"/mnt/stock/projets/powwer-terry/src/Makefile.win",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/zip/Makefile",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/Makefile",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/cpt/Makefile",
-		"/mnt/stock/projets/powwer-terry/CHANGELOG",
-		"/mnt/stock/projets/powwer-terry/REQUIREMENTS",
-		"/mnt/stock/projets/powwer-terry/CREDITS",
-		"/mnt/stock/projets/powwer-terry/INSTALL",
-		"/mnt/stock/projets/powwer-terry/VERSION",
-		"/mnt/stock/projets/pombo/pombo.conf",
-		"/home/tiger-222/IPy-0.75/COPYING",
-		"/home/tiger-222/IPy-0.75/setup.py",
-		"/mnt/stock/projets/pombo/pombo.py",
-		"/mnt/stock/projets/pombo/REQUIREMENTS",
-		"/mnt/master/www/bobotig/pages/_variables.php",
-		"/mnt/master/www/bobotig/contenu/documents/guide-pombo/index.php",
-		"/home/tiger-222/widgetMenu.js",
-		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/include/class_ttf.h",
-		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/include/Player.h",
-		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/src/Player.cpp",
-		"/home/tiger-222/GE++/GEV6(bonus)_arcanomorphe/src/class_ttf.cpp",
-		"/mnt/stock/projets/powwer-terry/.git/config",
-		"/home/tiger-222/GE++/GEV3_Brainiac/src/main.cpp",
-		"/home/tiger-222/GE++/GEV3_Brainiac/src/IGameEngine.cpp",
-		"/home/tiger-222/GE++/GEV3_Brainiac/src/GameEngine_SDL.cpp",
-		"/home/tiger-222/GE++/GEV2_UFO/Makefile",
-		"/home/tiger-222/GE++/GEV1_Slideshow/Makefile",
-		"/home/tiger-222/GE++/AUTHOR.txt",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/engine.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/engine.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/power-terry.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/power-terry.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/Makefile",
-		"/home/tiger-222/GE++/GEV1_Slideshow/stdout.txt",
-		"/home/tiger-222/GE++/GEV1_Slideshow/version.txt",
-		"/mnt/stock/projets/polycode/BUILD.txt",
-		"/mnt/stock/projets/polycode/CMakeLists.txt",
-		"/mnt/stock/projets/polycode/Dependencies/CMakeLists.txt",
-		"/mnt/stock/projets/vlen/.gitignore",
-		"/mnt/stock/projets/docolav/.gitignore",
-		"/mnt/stock/projets/pombo/pombo-git/.gitignore",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/event.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/event.h",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/shared/stats.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/core.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/core.h",
-		"/mnt/stock/projets/cracker-ng/cracker-ng-git/src/shared/stats.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/moteur/core.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/power-terry.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/power-terry.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Audio.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Drawable.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Core.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Constants.h",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/Audio.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/moteur/audio.cc",
-		"/mnt/stock/projets/power-terry_1st-offensive/src/File.class",
-		"/home/tiger-222/solarus-0.9.2/readme.txt",
-		"/home/tiger-222/solarus-0.9.2/install.txt",
-		"/home/tiger-222/solarus-0.9.2/CMakeLists.txt",
-		"/home/tiger-222/solarus-0.9.2/src/Configuration.cpp",
-		"/home/tiger-222/solarus-0.9.2/src/Treasure.cpp",
-		"/home/tiger-222/solarus-0.9.2/src/Timer.cpp",
-		"/home/tiger-222/solarus-0.9.2/ChangeLog",
-		"/home/tiger-222/solarus-0.9.2/license.txt",
-		"/home/tiger-222/GameEditor/bin/update.sh",
-		"/mnt/stock/projets/pombo/pombo-git/pombo.py",
-		"/mnt/stock/projets/pombo/pombo-git/pombo.conf",
-		"/mnt/stock/projets/pombo/pombo-git/VERSION",
-		"/mnt/stock/projets/pombo/pombo-git/REQUIREMENTS",
-		"/mnt/master/www/bobotig/voleur/pombo.php",
-		"/mnt/master/www/rugby/chansons/generer_index.php",
-		"/mnt/master/www/deleted.files",
-		"/mnt/stock/apps/Windows/Gros poissons/Statistica 8.0.725.0 (EN)/Instructions.txt",
-		"/mnt/master/www/maj-btg",
-		"/mnt/master/www/bobotig/robots.txt",
-		"/mnt/master/www/rugby/boutique/_variables.php",
-		"/mnt/master/www/rugby/boutique/bdc.php",
-		"/home/tiger-222/tests/test.php",
-		"/home/tiger-222/tests/t",
-		"/home/tiger-222/test.php",
-		"/mnt/stock/projets/matriux/Sources-diverses/Forum/MODs/delete-tmp_T2/deleteTmp.php",
-		"/mnt/stock/projets/vncpwdump/vncpwdump.c",
-		"/mnt/stock/projets/vncpwdump/COPYING"
+		"/mnt/master/projets/codez/Logiciel/log.cpp"
 	],
 	"find":
 	{
@@ -349,6 +445,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"ini_",
+			"SI_NEWLINE_A",
 			"stepint",
 			"_image",
 			"_sprite",
@@ -474,9 +572,7 @@
 			"runprocess",
 			"save",
 			"ImageGrab",
-			"TMPDIR",
-			"http://",
-			"FNAME"
+			"TMPDIR"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -484,6 +580,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"config_",
+			"SI_NEWLINE",
 			"image_",
 			"sprite_",
 			"current_step_",
@@ -597,8 +695,295 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/Tectum/README.md",
+					"settings":
+					{
+						"buffer_size": 393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Makefile",
+					"settings":
+					{
+						"buffer_size": 871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/powwer-terry.cc",
+					"settings":
+					{
+						"buffer_size": 463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Tectum/components/core.h",
+					"settings":
+					{
+						"buffer_size": 2213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1523,
+								1523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1052.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/mnt/master/projets/gatorque/fix-qualifiers.patch",
+					"settings":
+					{
+						"buffer_size": 3601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Diff/Diff.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Tectum/components/core.cc",
+					"settings":
+					{
+						"buffer_size": 2624,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2187,
+								2187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1084.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Tectum/constants.h",
+					"settings":
+					{
+						"buffer_size": 590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								420,
+								420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Tectum/components/logger.h",
+					"settings":
+					{
+						"buffer_size": 1615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								560,
+								560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/Tectum/components/config.h",
+					"settings":
+					{
+						"buffer_size": 2311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								428,
+								428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/Tectum/components/config.cc",
+					"settings":
+					{
+						"buffer_size": 2943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/Tectum/components/logger.cc",
+					"settings":
+					{
+						"buffer_size": 1269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								235,
+								235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -608,7 +993,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -662,6 +1047,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 136.0,
+	"side_bar_width": 145.0,
 	"status_bar_visible": true
 }

@@ -3,7 +3,7 @@
  * \file config.h
  * \brief Tectum engine - configuration management headers.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.05
+ * \date 2012.11.05 - Initial release
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  *
@@ -12,14 +12,14 @@
  */
 
 
-#ifndef COMPONENTS_CONFIG_H_
-#define COMPONENTS_CONFIG_H_
+#ifndef TECTUM_COMPONENTS_CONFIG_H_
+#define TECTUM_COMPONENTS_CONFIG_H_
 
 #define SI_CONVERT_GENERIC
 
 #include <cstdio>
-#include "./logger.h"
-#include "./../lib/SimpleIni.h"
+#include <Tectum/components/logger.h>
+#include <Tectum/third/SimpleIni.h>
 
 
 namespace tectum {
@@ -58,6 +58,14 @@ public:
 	 * @return The value of the key
 	 */
 	int getValue(const std::string &, const int);
+	
+	/*!
+	 * \brief Get a value (double).
+	 * @param The key
+	 * @param The default value
+	 * @return The value of the key
+	 */
+	double getValue(const std::string &, const double);
 	
 	/*!
 	 * \brief Get a value (bool).
@@ -109,4 +117,4 @@ private:
 
 }
 
-#endif  // COMPONENTS_CONFIG_H_
+#endif  // TECTUM_COMPONENTS_CONFIG_H_

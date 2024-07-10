@@ -3,7 +3,7 @@ CXX     = g++
 #CFLAGS  = -march=native -O3 -s
 CFLAGS  = -g -O0
 CFLAGS += -Wall -W -pedantic -Wextra -Wunused -Wformat=2 -fexceptions -Weffc++ -Wpadded
-LDLIBS  = -lsfml-graphics -lsfml-window
+LDLIBS  = -lsfml-graphics -lsfml-window -I./src
 LIB     = ConvertUTF.o
 OBJ     = config.o logger.o core.o
 NAME    = powwer-terry
@@ -14,14 +14,14 @@ clean:
 	@echo " . Cleaning ... "
 	rm -f *.o $(NAME)
 
-$(NAME): $(LIB) $(OBJ)
-	$(CXX) $(CFLAGS) $(LDLIBS) $^ src/tectum.cc -o $@
+$(NAME): $(OBJ)
+	$(CXX) $(CFLAGS) $(LDLIBS) $^ src/$@.cc -o $@
+
+$(OBJ): $(LIB)
+	$(CXX) $(CFLAGS) $(LDLIBS) -c src/Tectum/components/$*.cc
 
 $(LIB):
-	$(CXX) $(CFLAGS) -c src/lib/$*.c
-
-$(OBJ):
-	$(CXX) $(CFLAGS) -c src/components/$*.cc
+	$(CXX) $(CFLAGS) $(LDLIBS) -c src/Tectum/third/$*.c
 
 check:
 	valgrind --leak-check=full --show-reachable=yes ./$(NAME)

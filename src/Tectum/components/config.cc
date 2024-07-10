@@ -3,7 +3,7 @@
  * \file config.cc
  * \brief Tectum engine - configuration management.
  * \author Mickaël 'Tiger-222' Schoentgen
- * \date 2012.11.05
+ * \date 2012.11.05 - Initial release
  *
  * Copyright (C) 2012 Mickaël 'Tiger-222' Schoentgen.
  *
@@ -12,13 +12,13 @@
  */
 
 
-#include "./config.h"
+#include <Tectum/components/core.h>
 
 
 namespace tectum {
 
 Config::Config():
-	log_(),
+	log_(log_),
 	config_(),
 	current_section_()
 {
@@ -51,8 +51,8 @@ const char *Config::getValue(const std::string &key, const std::string &value) {
 	const char *val = config_.GetValue(current_section_.c_str(), key.c_str());
 	sprintf(log_.str_, "%s = %s", key.c_str(), val);
 	DEBUG(log_.str_);
-	if ( val == NULL ) {
-		sprintf(log_.str_, "! %s = %s", key.c_str(), value.c_str());
+	if ( val == NULL || strlen(val) > 256 ) {
+		sprintf(log_.str_, "> %s = %s", key.c_str(), value.c_str());
 		DEBUG(log_.str_);
 		return value.c_str();
 	}
@@ -63,9 +63,21 @@ int Config::getValue(const std::string &key, const int value) {
 	int val = config_.GetDoubleValue(current_section_.c_str(), key.c_str());
 	sprintf(log_.str_, "%s = %d", key.c_str(), val);
 	DEBUG(log_.str_);
-	if ( val < 0 ) {
+	if ( val == 0 ) {
 		val = value;
-		sprintf(log_.str_, "! %s = %d", key.c_str(), val);
+		sprintf(log_.str_, "> %s = %d", key.c_str(), val);
+		DEBUG(log_.str_);
+	}
+	return val;
+}
+
+double Config::getValue(const std::string &key, const double value) {
+	double val = config_.GetBoolValue(current_section_.c_str(), key.c_str());
+	sprintf(log_.str_, "%s = %f", key.c_str(), val);
+	DEBUG(log_.str_);
+	if ( val == 0.0 ) {
+		val = value;
+		sprintf(log_.str_, "> %s = %f", key.c_str(), val);
 		DEBUG(log_.str_);
 	}
 	return val;
@@ -77,7 +89,7 @@ int Config::getValue(const std::string &key, const bool state) {
 	DEBUG(log_.str_);
 	if ( val < 0 ) {
 		val = state;
-		sprintf(log_.str_, "! %s = %d", key.c_str(), val);
+		sprintf(log_.str_, "> %s = %d", key.c_str(), val);
 		DEBUG(log_.str_);
 	}
 	return val;
